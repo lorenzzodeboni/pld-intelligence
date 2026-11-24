@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+data/analyst_decisions.csv
+data/feedback.json
+data/analysis_cache.pkl
+.venv-broken/
