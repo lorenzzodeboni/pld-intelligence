@@ -357,7 +357,10 @@ def _render_copilot(result: dict) -> None:
 
 def main() -> None:
     _init()
+    status = st.empty()
+    status.info("Lendo a base sintética e montando a fila. Na primeira abertura isso demora cerca de um minuto. A tela escura é essa espera.")
     frames, result = get_store()
+    status.empty()
     decisions = read_decisions()
 
     with st.sidebar:
